@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { projectData } from '@/pages/data'
+import { projectData } from '@/components/data'
 import {AiFillGithub} from 'react-icons/ai'
 import Image from 'next/image'
 
