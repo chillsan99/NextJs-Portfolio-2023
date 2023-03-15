@@ -27,15 +27,15 @@ export default function Home() {
           <nav className='pt-6 mb-6 flex justify-between px-10'> 
             <h1 className='text-xl dark:text-white sm: invisible md:visible dark:font-medium'>chillsan99</h1>
             <div>
-              <ul className='flex justify-content text-center ml-12 gap-5 font-medium dark:text-white'>
+              <ul className='flex justify-content text-center ml-12 gap-5 font-medium dark:text-white md:visible sm: invisible'>
                 <li onClick={() => window.location.replace("/#about")}>About</li>
                 <li onClick={() => window.location.replace("/#projects")}>Projects</li>
                 <li onClick={() => window.location.replace("#/skills")}>Skills</li>
               </ul>
             </div>
             <ul className='flex items-center'>
-              <li><BsFillSunFill className='dark:text-white' onClick={() => setDarkMode(!darkMode)}/></li>
-              <li>
+              <li><BsFillSunFill className=' sm:ml-20 md:mx-auto dark:text-white text-xl' onClick={() => setDarkMode(!darkMode)}/></li>
+              <li className='sm: invisible md:visible'>
                 <a className="bg-gradient-to-tr from-cyan-200 to-purple-300 text-white px-5 py-2 rounded-md ml-8 drop-shadow-md transition ease-in-out delay-75 hover:drop-shadow-xl dark:text-black" href='#'>
                   Resume
                 </a>
@@ -56,11 +56,15 @@ export default function Home() {
             </div>
          </div>
             <h3 className='text-2xl pt-6 dark:text-white'> Aspiring Front-End Developer 😃</h3>
-            <p className='text-md py-5 text-gray-800  dark:text-white'> I&apos;m a student from Washington and Jefferson College&apos;s graduating class of 2021. I&apos;m very interested in Software Engineering, especially the one of Web applications, games, or whatever it may be! </p>
+            <p className='text-md py-5 text-gray-800 mx-auto text-left md:w-3/5 sm: w-3/4  dark:text-white'> I&apos;m a student from Washington and Jefferson College&apos;s graduating class of 2021. I&apos;m very interested in Software Engineering, especially the one of Web applications, games, or whatever it may be! </p>
           </div>
-        
+          <div className='md:invisible  sm:visible flex justify-center text-center mr-5'>
+            <a className="bg-cyan-400 drop-shadow-xl dark:bg-black text-white px-10 py-3 flex justify-center  rounded-md ml-8" href='#'>
+                  Resume
+            </a>
+          </div>
         {/*  About me go here */}
-          <div id='about' className='pt-10 pb-2 justify-center mx-auto md:w-2/3'>
+          <div id='about' className='pt-10 pb-4 justify-center mx-auto md:w-2/3'>
             <h3 className='text-2xl pb-4 text-center dark:text-white'>About me</h3>
             <div className='justify-center mx-auto mb-2.5'>
             <p className='text-md py-2 leading-8 text-gray block md:w-30 sm: m-10 dark:text-white'> I originally started my career back in High School doing graphic design, and from there I wanted to branch 
