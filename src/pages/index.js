@@ -56,7 +56,7 @@ export default function Home() {
             </div>
          </div>
             <h3 className='text-2xl pt-6 dark:text-white'> Aspiring Front-End Developer 😃</h3>
-            <p className='text-md py-5 text-gray-800  dark:text-white'> xxx </p>
+            <p className='text-md py-5 text-gray-800  dark:text-white'> I'm a student from Washington and Jefferson College's graduating class of 2021. I'm very interested in Software Engineering, especially the one of Web applications, games, or whatever it may be! </p>
           </div>
         
         {/*  About me go here */}
