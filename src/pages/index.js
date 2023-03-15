@@ -69,9 +69,6 @@ export default function Home() {
             <p className='text-md py-2 leading-8 text-gray block md:w-30 sm: m-10 dark:text-white'> I originally started my career back in High School doing graphic design, and from there I wanted to branch 
             out into something more and do something greater, like programming. Originally, I went to Washington and Jefferson college in 2017 to try to do video game devleopment, and general programming,
             only to fall in love with Front-End Development. From there I&#39;ve built tons of programs and branched out my skills in HTML, CSS, Javascript, and is always craving to learn more!</p>
-          
-            <p className='text-md pt-6 leading-8 sm: m-10 dark:text-white'> Over the course of my time studying and graduating, I&#39;ve studied and 
-            worked with a bunch of different technologies and programming languages. So Far, I have worked with: Javascript, HTML, CSS, React, Java, Python, and more! </p>
             </div>
           </div>
         </section>
