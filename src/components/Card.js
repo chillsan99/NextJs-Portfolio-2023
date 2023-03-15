@@ -10,7 +10,6 @@ const Card = ({setDarkMode}) => {
         {projectData.map((data, key) =>{
             return(
                     <div key={key} className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 basis-1/3 flex-1 h-90">
-                        <img className="rounded-2xl w-full h-44 object-cover drop-shadow-xl dark:text-white" src={data.image} alt={data.pr_name} layout="responsive"/>
                         <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>{data.pr_name}</h4>
                         <div>
                             <p className='pb-2 text-md font-medium text-center  dark:text-white'>{data.lang_used}</p>

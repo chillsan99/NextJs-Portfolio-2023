@@ -55,11 +55,11 @@ export default function Home() {
                 <span><a href="https://www.linkedin.com/in/cierra-h-762032138/"><BsLinkedin className='text-black transition duration 300 ease-in-out mt-10 text-3xl dark:text-white '/></a></span>
                 <span><a href="https://medium.com/@cierra.hilliary"><AiFillMediumCircle className='text-black transition duration 300 ease-in-out mt-10 text-4xl dark:text-white '/></a></span>
               </div>
-                <Image className='rounded-2xl mr-20 justify-center w-80 mb-2.5' src={profileimage} layout="fix"/>
+                <Image className='rounded-2xl mr-20 justify-center w-80 mb-2.5' src={profileimage} alt="chillsan99" layout="fix"/>
             </div>
          </div>
             <h3 className='text-2xl pt-6 dark:text-white'> Aspiring Front-End Developer 😃</h3>
-            <p className='text-md py-5 text-gray-800  dark:text-white'> I'm an aspiring front-end engineer. Currently, I'm focused on building the most creative things I can find! </p>
+            <p className='text-md py-5 text-gray-800  dark:text-white'> I&#39;m a Junior Front-End Engineer who is doing their best to create and build more and more every single day!</p>
           </div>
         
         {/*  About me go here */}
@@ -68,7 +68,7 @@ export default function Home() {
             <div className='justify-center mx-auto mb-2.5'>
             <p className='text-md py-2 leading-8 text-gray block md:w-30 sm: m-10 dark:text-white'> I originally started my career back in High School doing graphic design, and from there I wanted to branch 
             out into something more and do something greater, like programming. Originally, I went to Washington and Jefferson college in 2017 to try to do video game devleopment, and general programming,
-            only to fall in love with Front-End Development. From there I've built tons of programs and branched out my skills in HTML, CSS, Javascript, and is always craving to learn more!</p>
+            only to fall in love with Front-End Development. From there I&#39;ve built tons of programs and branched out my skills in HTML, CSS, Javascript, and is always craving to learn more!</p>
           
             <p className='text-md pt-6 leading-8 sm: m-10 dark:text-white'> Over the course of my time studying and graduating, I've studied and 
             worked with a bunch of different technologies and programming languages. So Far, I have worked with: Javascript, HTML, CSS, React, Java, Python, and more! </p>
