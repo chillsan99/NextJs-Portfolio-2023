@@ -2,11 +2,8 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import profileimage from '/public/profileimage.png'
-import Footer from '@/components/Footer'
 import {BsFillSunFill, BsLinkedin, BsTwitter } from 'react-icons/bs'
-import {BiMenu} from 'react-icons/bi'
 import {AiFillGithub, AiFillMediumCircle} from 'react-icons/ai'
-import Card from '@/components/Card'
 import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -95,14 +92,33 @@ export default function Home() {
           <div id="projects">
             <h3 className='py-10 text-2xl dark:text-white text-center'> Projects </h3>
             <div className='py-5 lg:flex lg:w-2/3 sm:w-4/5 sm: mx-10 md:mx-auto pb-20'>
-              <Card setDarkMode={setDarkMode}/>
+                <div lassName= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 basis-1/3 flex-1 h-90">
+                        <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Haechan Bot</h4>
+                        <div>
+                            <p className='pb-2 text-md font-medium text-center  dark:text-white'>Python</p>
+                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT.</p>
+                        <div className='flex justify-between relative flex-1'>
+                            <a className='bg-cyan-400 p-3 rounded-2xl dark:text-white inset-x-0 bottom-0' 
+                                href= "https://twitter.com/HaechanBot66">Project Link</a>
+                            <a className='bg-cyan-600 p-3 rounded-2xl dark:text-white' href="https://github.com/chillsan99/Haechan-Bot"><span className='flex flex-row '><AiFillGithub className='text-2xl mr-2'/>GitHub</span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
           
         </section>
         <section>
         </section>
-        <Footer/>
+        <div className='text-center gap-8 py-5 px-6 text-4xl bg-cyan-400 rounded-t-lg mx-2'>
+            <span className='text-sm'> Credit to Pepper Jackets via PicCrew for the photo! </span>
+              <div className='flex justify-center px-6 gap-8  pt-5'>
+                <span><a href="https://github.com/chillsan99"><AiFillGithub className='text-white text-3xl transition duration 300 ease-in-out dark:text-black hover:text-black'/></a></span>
+                <span><a href="https://www.linkedin.com/in/cierra-h-762032138/"><BsLinkedin className='text-white text-3xl transition duration 300 ease-in-out dark:text-black hover:text-blue-800' /></a></span>
+                <span><a href="https://medium.com/@cierra.hilliary"><AiFillMediumCircle className='text-white text-3xl transition duration 300 ease-in-out dark:text-black hover:text-blue-800' /></a></span>
+              </div>
+            <span className='text-sm'>chillsan99, 2023, Built with NextJS and Tailwind CSS.</span>
+        </div>
       </main>
       </div>
     </>
