@@ -45,7 +45,7 @@ export default function Home() {
             <Image className='rounded-2xl justify-center mx-auto w-80 mb-2.5' src={profileimage} layout="fix"/>
          </div>
             <h3 className='text-2xl pt-6 dark:text-white'> Aspiring Front-End Developer 😃</h3>
-            <p className='text-md py-5 text-gray-800  dark:text-white'> I'm an aspiring front-end engineer. Currently, I'm focused on building the most creative things I can find! </p>
+            <p className='text-md py-5 text-gray-800  dark:text-white'> I&#39;m an aspiring front-end engineer. Currently, I&#39;m focused on building the most creative things I can find! </p>
           </div>
         
         {/*  About me go here */}
@@ -54,9 +54,9 @@ export default function Home() {
             <div className='justify-center mx-auto mb-2.5'>
             <p className='text-md py-2 leading-8 text-gray block md:w-full dark:text-white'> I originally started my career back in High School doing graphic design, and from there I wanted to branch 
             out into something more and do something greater, like programming. Originally, I went to Washington and Jefferson college in 2017 to try to do video game devleopment, and general programming,
-            only to fall in love with Front-End Development. From there I've built tons of programs and branched out my skills in HTML, CSS, Javascript, and is always craving to learn more!</p>
+            only to fall in love with Front-End Development. From there I&#39;ve built tons of programs and branched out my skills in HTML, CSS, Javascript, and is always craving to learn more!</p>
           
-            <p className='text-md pt-6 leading-8 text-gray- dark:text-white'> Over the course of my time studying and graduating, I've studied and 
+            <p className='text-md pt-6 leading-8 text-gray- dark:text-white'> Over the course of my time studying and graduating, I&#39;ve studied and 
             worked with a bunch of different technologies and programming languages. So Far, I have worked with: Javascript, HTML, CSS, React, Java, Python, and more! </p>
             </div>
           </div>
