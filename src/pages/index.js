@@ -68,7 +68,7 @@ export default function Home() {
             <div className='justify-center mx-auto mb-2.5'>
             <p className='text-md py-2 leading-8 text-gray block md:w-30 sm: m-10 dark:text-white'> I originally started my career back in High School doing graphic design, and from there I wanted to branch 
             out into something more and do something greater, like programming. Originally, I went to Washington and Jefferson college in 2017 to try to do video game devleopment, and general programming,
-            only to fall in love with Front-End Development. From there I&#39;ve built tons of programs and branched out my skills in HTML, CSS, Javascript, and is always craving to learn more!</p>
+            only to fall in love with Front-End Development. From there I&rsquo;ve built tons of programs and branched out my skills in HTML, CSS, Javascript, and is always craving to learn more!</p>
             </div>
           </div>
         </section>
