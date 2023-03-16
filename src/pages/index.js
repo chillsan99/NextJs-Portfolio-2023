@@ -1,7 +1,11 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
+import animeapp from '/public/animeapp.PNG'
+import moviegenerator from 'public/moviegenerator.jpg'
+import guesstheword from 'public/guesstheword.JPG'
 import profileimage from '/public/profileimage.png'
+import haechanbot from '/public/haechanbot.jpg'
 import {BsFillSunFill, BsLinkedin, BsTwitter } from 'react-icons/bs'
 import {AiFillGithub, AiFillMediumCircle} from 'react-icons/ai'
 import { useState } from 'react'
@@ -56,17 +60,17 @@ export default function Home() {
             </div>
          </div>
             <h3 className='text-2xl pt-6 dark:text-white'> Aspiring Front-End Developer 😃</h3>
-            <p className='text-md py-5 text-gray-800 mx-auto text-left md:w-3/5 sm: w-3/4  dark:text-white'> I&apos;m a student from Washington and Jefferson College&apos;s graduating class of 2021. I&apos;m very interested in Software Engineering, especially the one of Web applications, games, or whatever it may be! </p>
+            <p className='text-md py-5 text-gray-800 mx-auto sm:text-left md:text-center md:w-3/5 sm: w-3/4  dark:text-white'> I&apos;m a student from Washington and Jefferson College&apos;s graduating class of 2021. I&apos;m very interested in Software Engineering, especially the one of Web applications, games, or whatever it may be! </p>
           </div>
-          <div className='md:invisible  sm:visible flex justify-center text-center mr-5'>
-            <a className="bg-cyan-400 drop-shadow-xl dark:bg-black text-white px-10 py-3 flex justify-center  rounded-md ml-8" href='#'>
+          <div className='md:invisible  sm:visible flex justify-center text-center mr-5 sm: mb-10 md:mb-5'>
+            <a className="bg-cyan-400 drop-shadow-xl dark:bg-black text-white px-10 py-3 flex justify-center rounded-md ml-8" href='#'>
                   Resume
             </a>
           </div>
         {/*  About me go here */}
-          <div id='about' className='pt-10 pb-4 justify-center mx-auto md:w-2/3'>
-            <h3 className='text-2xl pb-4 text-center dark:text-white'>About me</h3>
-            <div className='justify-center mx-auto mb-2.5'>
+          <div id='about' className='pt-7 pb-4 justify-center mx-auto md:w-2/3'>
+            <h3 className='text-2xl text-center dark:text-white'>About me</h3>
+            <div className='justify-center mx-auto'>
             <p className='text-md py-2 leading-8 text-gray block md:w-30 sm: m-10 dark:text-white'> I originally started my career back in High School doing graphic design, and from there I wanted to branch 
             out into something more and do something greater, like programming. Originally, I went to Washington and Jefferson college in 2017 to try to do video game devleopment, and general programming,
             only to fall in love with Front-End Development. </p>
@@ -75,8 +79,8 @@ export default function Home() {
         </section>
         <section>
           <div id = "skills">
-            <h3 className='text-center font-medium py-5 text-xl dark:text-white'>Programming Languages </h3>
-              <ul className='pt-10 flex flex-wrap m-auto justify-center mb-6 text-lg text-gray-900 dark:text-white'>
+            <h3 className='text-center font-medium py-2 text-xl md:py-10 sm:py-12 dark:text-white'>Programming Languages </h3>
+              <ul className='pt-5 md:flex md:flex-row m-auto justify-center mb-10 text-xl text-gray-900 sm:flex sm:flex-col text-center ml-10 dark:text-white'>
                 <li className='mr-10 transition duration-300 ease-in-out hover:text-orange-300'>Javascript</li>
                 <li className='mr-10 transition duration-300 ease-in-out hover:text-red-400'>HTML</li>
                 <li className='mr-10 transition duration-300 ease-in-out hover:text-blue-600'>CSS</li>
@@ -85,7 +89,7 @@ export default function Home() {
                 <li className='mr-10 transition duration-300 ease-in-out hover:text-green-300'>Python</li>
               </ul>
               <h3 className=' text-center font-medium py-2 text-xl dark:text-white'> Other </h3>
-                <ul className='pt-10 flex flex-wrap m-auto justify-center mb-6 text-lg text-gray-900 dark:text-white'>
+                <ul className='pt-10 flex flex-wrap m-auto justify-center mb-10 text-lg text-gray-900 dark:text-white'>
                   <li className='mr-10 transition duration-300 ease-in-out hover:text-orange-300'>Adobe Photoshop</li>
                   <li className='mr-10 transition duration-300 ease-in-out hover:text-red-400'>Illustrator</li>
               </ul>
@@ -95,11 +99,51 @@ export default function Home() {
           {/*  Projects go here */}
           <div id="projects">
             <h3 className='py-10 text-2xl dark:text-white text-center'> Projects </h3>
-            <div className='py-5 lg:flex lg:w-2/3 sm:w-4/5 sm: mx-10 md:mx-auto pb-20'>
-                <div lassName= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 basis-1/3 flex-1 h-90">
+            <div className='py-10 lg:flex flex-col gap-10 lg:flex-row lg:flex-wrap lg:w-2/3 sm:w-4/5 sm: mx-10 md:mx-auto pb-20 '>
+                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 basis-1/3 flex-1 h-90 gap-10 ">
                         <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Haechan Bot</h4>
+                        <Image className = 'object-cover rounded-xl mr-20 justify-center w-30 mb-2.5 w-30' src={haechanbot}/>
                         <div>
                             <p className='pb-2 text-md font-medium text-center  dark:text-white'>Python</p>
+                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT.</p>
+                        <div className='flex justify-between relative flex-1'>
+                            <a className='bg-cyan-400 p-3 rounded-2xl dark:text-white inset-x-0 bottom-0' 
+                                href= "https://twitter.com/HaechanBot66">Project Link</a>
+                            <a className='bg-cyan-600 p-3 rounded-2xl dark:text-white' href="https://github.com/chillsan99/Haechan-Bot"><span className='flex flex-row '><AiFillGithub className='text-2xl mr-2'/>GitHub</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 basis-1/3 flex-1">
+                        <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Tv Show Website</h4>
+                        <div>
+                          <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={haechanbot} />
+                            <p className='pb-2 text-md font-medium text-center  dark:text-white'>React, CSS</p>
+                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT.</p>
+                        <div className='flex justify-between relative flex-1'>
+                            <a className='bg-cyan-400 p-3 rounded-2xl dark:text-white inset-x-0 bottom-0' 
+                                href= "https://twitter.com/HaechanBot66">Project Link</a>
+                            <a className='bg-cyan-600 p-3 rounded-2xl dark:text-white' href="https://github.com/chillsan99/Haechan-Bot"><span className='flex flex-row '><AiFillGithub className='text-2xl mr-2'/>GitHub</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 basis-1/3 flex-1 h-90">
+                        <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Haechan Bot</h4>
+                        <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={haechanbot} />
+                        <div>
+                            <p className='pb-2 text-lg font-medium text-center  dark:text-white'>Python</p>
+                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT.</p>
+                        <div className='flex justify-between relative flex-1'>
+                            <a className='bg-cyan-400 p-3 rounded-2xl dark:text-white inset-x-0 bottom-0' 
+                                href= "https://twitter.com/HaechanBot66">Project Link</a>
+                            <a className='bg-cyan-600 p-3 rounded-2xl dark:text-white' href="https://github.com/chillsan99/Haechan-Bot"><span className='flex flex-row '><AiFillGithub className='text-2xl mr-2'/>GitHub</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 basis-1/3 flex-1 h-90">
+                        <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Haechan Bot</h4>
+                        <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={moviegenerator} />
+                        <div>
+                            <p className='pb-2 text-lg font-medium text-center  dark:text-white'>React, SCSS </p>
                             <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT.</p>
                         <div className='flex justify-between relative flex-1'>
                             <a className='bg-cyan-400 p-3 rounded-2xl dark:text-white inset-x-0 bottom-0' 
