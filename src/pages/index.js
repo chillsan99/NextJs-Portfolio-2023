@@ -99,13 +99,13 @@ export default function Home() {
           {/*  Projects go here */}
           <div id="projects">
             <h3 className='py-10 text-2xl dark:text-white text-center'> Projects </h3>
-            <div className='py-10 lg:flex flex-col gap-10 lg:flex-row lg:flex-wrap lg:w-2/3 sm:w-4/5 sm: mx-10 md:mx-auto pb-20 '>
-                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 basis-1/3 flex-1 h-90 gap-10 ">
+            <div className='py-10 lg:flex flex-col gap-10 lg:flex-row lg:flex-wrap lg:w-2/3 sm:w-4/5 sm:p-10 mx-auto pb-20 '>
+                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 mb-5 basis-1/3 flex-1 h-90 gap-10 ">
                         <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Haechan Bot</h4>
-                        <Image className = 'object-cover rounded-xl mr-20 justify-center w-30 mb-2.5 w-30' src={haechanbot}/>
+                        <Image className = 'object-cover rounded-xl mr-20 justify-center w-30 mb-2.5 w-30' src={haechanbot} alt={''}/>
                         <div>
                             <p className='pb-2 text-md font-medium text-center  dark:text-white'>Python</p>
-                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT.</p>
+                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT. Unfortunately will be depreciated soon.</p>
                         <div className='flex justify-between relative flex-1'>
                             <a className='bg-cyan-400 p-3 rounded-2xl dark:text-white inset-x-0 bottom-0' 
                                 href= "https://twitter.com/HaechanBot66">Project Link</a>
@@ -113,12 +113,12 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 basis-1/3 flex-1">
+                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 mb-5 basis-1/3 flex-1">
                         <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Tv Show Website</h4>
                         <div>
-                          <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={haechanbot} />
+                          <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={animeapp} alt={''}/>
                             <p className='pb-2 text-md font-medium text-center  dark:text-white'>React, CSS</p>
-                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT.</p>
+                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>React Project using the Jikan API to pull information to show upcoming, and most popular shows and display information about them by item per page.</p>
                         <div className='flex justify-between relative flex-1'>
                             <a className='bg-cyan-400 p-3 rounded-2xl dark:text-white inset-x-0 bottom-0' 
                                 href= "https://twitter.com/HaechanBot66">Project Link</a>
@@ -126,29 +126,29 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 basis-1/3 flex-1 h-90">
-                        <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Haechan Bot</h4>
-                        <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={haechanbot} />
+                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 mb-10 basis-1/3 flex-1">
+                        <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Guess The Word!</h4>
+                        <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={guesstheword} alt={''} />
                         <div>
-                            <p className='pb-2 text-lg font-medium text-center  dark:text-white'>Python</p>
-                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT.</p>
+                            <p className='pb-2 text-lg font-medium text-center  dark:text-white'>HTML, CSS, Javascript</p>
+                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>Pokemon Guessing Game built with HTML, CSS, and Javascript to make an in-browser game that randomly give a Pokemon name along with a hint for you to guess.</p>
                         <div className='flex justify-between relative flex-1'>
                             <a className='bg-cyan-400 p-3 rounded-2xl dark:text-white inset-x-0 bottom-0' 
-                                href= "https://twitter.com/HaechanBot66">Project Link</a>
+                                href= "https://guessthatword.netlify.app">Project Link</a>
                             <a className='bg-cyan-600 p-3 rounded-2xl dark:text-white' href="https://github.com/chillsan99/Haechan-Bot"><span className='flex flex-row '><AiFillGithub className='text-2xl mr-2'/>GitHub</span></a>
                         </div>
                     </div>
                 </div>
-                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 basis-1/3 flex-1 h-90">
-                        <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Haechan Bot</h4>
-                        <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={moviegenerator} />
+                <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 mb-10 basis-1/3 flex-1">
+                        <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Movie Quote Generator</h4>
+                        <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={moviegenerator} alt={''} />
                         <div>
                             <p className='pb-2 text-lg font-medium text-center  dark:text-white'>React, SCSS </p>
-                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT.</p>
+                            <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>Open Source collaborative project found on GitHub and originally created by Kamiri Charles to generate movie quotes and now randomly generating background color based, by hitting the refresh button.</p>
                         <div className='flex justify-between relative flex-1'>
                             <a className='bg-cyan-400 p-3 rounded-2xl dark:text-white inset-x-0 bottom-0' 
-                                href= "https://twitter.com/HaechanBot66">Project Link</a>
-                            <a className='bg-cyan-600 p-3 rounded-2xl dark:text-white' href="https://github.com/chillsan99/Haechan-Bot"><span className='flex flex-row '><AiFillGithub className='text-2xl mr-2'/>GitHub</span></a>
+                                href= "https://kamiri-charles.github.io/movie-quote-generator/">Project Link</a>
+                            <a className='bg-cyan-600 p-3 rounded-2xl dark:text-white' href="https://kamiri-charles.github.com/movie-quote-generator/"><span className='flex flex-row '><AiFillGithub className='text-2xl mr-2'/>GitHub</span></a>
                         </div>
                     </div>
                 </div>
