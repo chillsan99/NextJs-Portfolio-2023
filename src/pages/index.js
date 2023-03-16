@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  const [open, setOpen] = useState(false); 
+
   return (
     <>
     <div className={darkMode ? "dark": ""}>
@@ -100,7 +100,7 @@ export default function Home() {
                         <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Haechan Bot</h4>
                         
                         <div>
-                            <p className='pb-2 text-md font-medium text-center  dark:text-white'>Python</p>
+                            <p className='pb-2 text-lg font-medium text-center  dark:text-white'>Python</p>
                             <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT. Unfortunately will be depreciated soon.</p>
                         <div className='flex justify-between relative flex-1'>
                             <a className='bg-cyan-400 p-3 rounded-2xl dark:text-white inset-x-0 bottom-0' 
@@ -112,7 +112,7 @@ export default function Home() {
                 <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 mb-5 basis-1/3 flex-1">
                         <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Tv Show Website</h4>
                         <div>
-                            <p className='pb-2 text-md font-medium text-center  dark:text-white'>React, CSS</p>
+                            <p className='pb-2 text-lg font-medium text-center  dark:text-white'>React, CSS</p>
                             <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>React Project using the Jikan API to pull information to show upcoming, and most popular shows and display information about them by item per page.</p>
                         <div className='flex justify-between relative flex-1'>
                             <a className='bg-cyan-400 p-3 rounded-2xl dark:text-white inset-x-0 bottom-0' 
