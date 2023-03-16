@@ -1,11 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
-import animeapp from '/public/animeapp.png'
-import moviegenerator from '/public/moviegenerator.jpg'
-import guesstheword from '/public/guesstheword.jpg'
 import profileimage from '/public/profileimage.png'
-import haechanbot from '/public/haechanbot.jpg'
 import {BsFillSunFill, BsLinkedin, BsTwitter } from 'react-icons/bs'
 import {AiFillGithub, AiFillMediumCircle} from 'react-icons/ai'
 import { useState } from 'react'
@@ -102,7 +98,7 @@ export default function Home() {
             <div className='py-10 lg:flex flex-col gap-10 lg:flex-row lg:flex-wrap lg:w-2/3 sm:w-4/5 sm:p-10 mx-auto pb-20 '>
                 <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 mb-5 basis-1/3 flex-1 h-90 gap-10 ">
                         <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Haechan Bot</h4>
-                        <Image className = 'object-cover rounded-xl mr-20 justify-center w-30 mb-2.5 w-30' src={haechanbot} alt={''}/>
+                        <Image className = 'object-cover rounded-xl mr-20 justify-center w-30 mb-2.5 w-30' alt={''}/>
                         <div>
                             <p className='pb-2 text-md font-medium text-center  dark:text-white'>Python</p>
                             <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>First Python project, where I used the twitterAPI to fetch tweets about the Korean Pop idol, Haechan of NCT. Unfortunately will be depreciated soon.</p>
@@ -116,7 +112,7 @@ export default function Home() {
                 <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 mb-5 basis-1/3 flex-1">
                         <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Tv Show Website</h4>
                         <div>
-                          <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={animeapp} alt={''}/>
+                          <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' alt={''}/>
                             <p className='pb-2 text-md font-medium text-center  dark:text-white'>React, CSS</p>
                             <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>React Project using the Jikan API to pull information to show upcoming, and most popular shows and display information about them by item per page.</p>
                         <div className='flex justify-between relative flex-1'>
@@ -128,7 +124,7 @@ export default function Home() {
                 </div>
                 <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 mb-10 basis-1/3 flex-1">
                         <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Guess The Word!</h4>
-                        <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={guesstheword} alt={''} />
+                        <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' alt={''} />
                         <div>
                             <p className='pb-2 text-lg font-medium text-center  dark:text-white'>HTML, CSS, Javascript</p>
                             <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>Pokemon Guessing Game built with HTML, CSS, and Javascript to make an in-browser game that randomly give a Pokemon name along with a hint for you to guess.</p>
@@ -141,7 +137,7 @@ export default function Home() {
                 </div>
                 <div className= "dark:bg-gray-800 drop-shadow-lg border-2 rounded-2xl p-10 mb-10 basis-1/3 flex-1">
                         <h4 className='text-xl pt-5 text-center font-medium py-2  dark:text-white'>Movie Quote Generator</h4>
-                        <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5' src={moviegenerator} alt={''} />
+                        <Image className = 'object-fit rounded-xl mr-20 justify-center w-30 mb-2.5'  alt={''} />
                         <div>
                             <p className='pb-2 text-lg font-medium text-center  dark:text-white'>React, SCSS </p>
                             <p className='leading-8 sm:text-small pb-4 dark:text-white flex-1'>Open Source collaborative project found on GitHub and originally created by Kamiri Charles to generate movie quotes and now randomly generating background color based, by hitting the refresh button.</p>
